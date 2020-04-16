@@ -41,7 +41,7 @@ if __name__ == '__main__':
         src_length, sos_idx, eos_idx, pad_idx, unk_idx
     )
     loss_func = nn.NLLLoss(reduction='none')
-    model = RnnAutoEncoderWithAttn(
+    model = RnnAutoEncoder(
         vocab_size, sos_idx, eos_idx, pad_idx,
         unk_idx, d_model, word_dropout_rate=0.0
     )
